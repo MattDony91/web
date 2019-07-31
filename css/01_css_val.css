@@ -1,0 +1,31 @@
+#hello {
+    font-size: 50px;
+}
+
+#welcome {
+    font-size: 50%;
+}
+
+#lunch {
+    font-size: 0.5em;
+}
+
+#snack {
+    font-size: 0.5rem;
+}
+
+#menu {
+    width: 50vw;
+    height: 50vh;
+    background-color: orangered;
+}
+
+/* div는 부모 */
+div {
+    width: 50%
+}
+
+/* h1은 자식, 부모 width를 상속받아 결국은 50% * 50% 가 적용돼 25% 사이즈가 된다 */
+h1 {
+    width: 50%;
+}

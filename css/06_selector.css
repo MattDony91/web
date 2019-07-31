@@ -1,0 +1,47 @@
+/* 전체 선택자 */
+* {
+    color: hotpink;
+}
+
+/* 그룹 선택자 */
+h1, h2 {
+    background-color: whitesmoke;
+}
+
+/* 태그 선택자 */
+h1 {
+    color: yellowgreen !important;
+}
+
+/* 아이디 선택자 */
+#id-selector {
+    color: tomato;
+}
+
+/* 그룹 선택자 */
+.class-selector {
+    color: gold;
+}
+
+/* 자식 선택자 */
+ul > li {
+    color: skyblue;
+}
+
+/* 형제 선택자(바로 뒤) */
+p + li {
+    color: violet;
+}
+
+/* 형제 선택자(뒤로 모두다) */
+p ~ li {
+    color: teal;
+}
+
+/*
+선택자 우선순위
+(0. 선택자를 불문하고 !important 를 붙여주는 속성은 최우선으로 적용됨)
+1. id
+2. class
+3. tag
+ */

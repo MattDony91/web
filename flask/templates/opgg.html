@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+    body {
+      background-color: #5383e8;
+    }
+  
+    nav {
+      background-color: #00143f;
+    }
+
+    #ad {
+      height: 200px
+    }
+  </style>
+{% endblock%}
+
+
+{% block body %}
+<!-- 이미지 -->
+<div class="text-center my-5">
+    <img src="https://attach.s.op.gg/logo/20190730135214.bb87673d92d8dff6a5de5c104187e4b4.png" class="rounded" alt="...">
+</div>
+<!-- 소환사명 검색 -->
+<form action="/search">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Name" id="summoner" name="summoner">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary bg-success text-white" type="button" id="btn_tier">랭크보기</button>
+    </div>
+  </div>
+</form>
+<div class="bg-white border text-center pt-5 mt-4 rounded" id="ad">
+  <h1>이거슨 광고창</h1>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+.tomato {
+    background-color: tomato;
+    position: static;
+}
+
+.olivedrab {
+    background-color: olivedrab;
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+}
+
+.gold {
+    background-color: gold;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.violet {
+    background-color: violet;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+.parents {
+    height: 200px;
+    width: 100%;
+    background-color: darkblue;
+    position: relative;
+}
+
+.children {
+    background-color: skyblue;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}

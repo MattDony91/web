@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>서브웨이 주문하기</h1>
+<p>주문서를 작성해주세요.</p>
+<form action="">
+    <label for="name">이름:</label>
+    <input id="name" type="text" placeholder="이름을 입력해주세요" name="name">
+    <br>
+    <label for="when">날짜:</label>
+    <input id="when" type="date" name="when" value="2019-07-29">
+
+    <h3>1. 샌드위치 선택</h3>
+    <input name="main" type="radio" value="1" id="main1"><label for="main1">에그마요</label>
+    <input name="main" type="radio" value="2" id="main2"><label for="main2">비엘티</label>
+    <input name="main" type="radio" value="3" id="main3"><label for="main3">터키</label>
+    <hr>
+    <h3>2. 사이즈 서택</h3>
+    <input type="number" name="size" step="15" min="15" max="30" value="15">
+    <hr>
+    <h3>3. 빵</h3>
+    <select name="bread">
+        <option value="bread1">허니오트</option>
+        <option value="bread2" disabled>플랫브래드</option>
+        <option value="bread2">하티 이탈리안</option>
+    </select>
+    <hr>
+    <h3>4. 야채/소스</h3>
+    <input type="checkbox" id="tomato" value="tomato" name="tomato"><label for="tomato">토마토</label><br>
+    <input type="checkbox" id="cucomber" value="cucomber" name="cucomber"><label for="cucomber">오이</label><br>
+    <input type="checkbox" id="hala" value="hala" name="hala"><label for="hala">할라피뇨</label><br>
+    <input type="checkbox" id="hot" value="hot" name="hot"><label for="hot">핫 칠리</label><br>
+    <input type="checkbox" id="bbq" value="bbq" name="bbq"><label for="bbq">바베큐</label><br>
+    <br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
