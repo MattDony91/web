@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>새로운 항목을 추가할 페이지</h1>
+<form action="/create">
+  <div class="form-group">
+    <!-- label 태그의 for 속성 id를 참조한다. -->
+    <label for="product">제품명</label>
+    <input type="text" class="form-control" id="product" name="product">
+  </div>
+  <div class="form-group">
+    <label for="category">카테고리</label>
+    <input type="text" class="form-control" id="category" name="category">
+  </div>
+  <div class="form-group">
+    <label for="replace">대체상품</label>
+    <input type="text" class="form-control" id="replace" name="replace">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

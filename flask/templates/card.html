@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+  <div class="row">
+    {% for  product in products %}
+      <div class="col">
+        <div class="card mt-3" style="width: 18rem;">
+          <div class="card-header text-center">
+            1
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{product[0]}}</li>
+            <li class="list-group-item">{{product[1]}}</li>
+            <li class="list-group-item">
+              <button class="btn btn-primary">{{product[2]}}</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
